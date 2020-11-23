@@ -12,6 +12,8 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 df = pd.read_csv('/home/emkaerr/PycharmProjects/F1_Sankey/F1S.csv')
 
+ind = pd.read_csv('/home/emkaerr/PycharmProjects/F1_Sankey/indexy.csv')
+
 app.layout = html.Div([
     html.H2('Formula 1 Sankey Diagram'),
     html.Hr(),
@@ -28,7 +30,8 @@ app.layout = html.Div([
     ),
     html.Div([
         dcc.Graph(id='graph-1')
-    ])
+    ],
+        style={'height': '100%'})
 
 ])
 
@@ -39,12 +42,25 @@ app.layout = html.Div([
 )
 def update_graph(selected_year):
     df2 = df.query(f'Year=={selected_year}')
-    trace = go.Scatter(
-        x=df2.Driver,
-        y=df2.Races
+    trace = go.Sankey(
+        arrangement='snap',
+        node=dict(
+            pad=5,
+            label=ind['O'],
+            x=ind['in']
+
+        ),
+        link=dict(
+            source=df2['Source'],
+            target=df2['Target'],
+            value=df2['Value'],
+        )
     )
     return {
-        'data': [trace]
+        'data': [trace],
+        'layout': go.Layout(
+           height=1000
+        )
     }
 
 
