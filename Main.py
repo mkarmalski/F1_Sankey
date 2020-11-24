@@ -18,27 +18,33 @@ app.layout = html.Div([
     html.H2('Formula 1 Sankey Diagram'),
     html.Hr(),
     html.Div([
-        dcc.Dropdown(
-            id='dropdown-1',
-            options=[
-                {'label': i, 'value': i} for i in df['Year'].unique()
-            ],
-            value='2020'
+        html.H4('Choose Season'),
+        html.Br(),
+        dcc.Slider(
+            id='slider-1',
+            min=df['Year'].min(),
+            max=df['Year'].max(),
+            step=1,
+            value=2020,
+            marks={i: str(i) for i in range(df['Year'].min(),df['Year'].max()+1,5)},
+            tooltip={'placement':'bottom'}
         ),
     ],
-        style={'width': '20%'}
+        style={'width': '80%','textAlign':'center','margin':'0 auto'}
     ),
     html.Div([
         dcc.Graph(id='graph-1')
     ],
         style={'height': '100%'})
 
-])
+], style={
+    'textAlign': 'center'
+})
 
 
 @app.callback(
     Output('graph-1', 'figure'),
-    [Input('dropdown-1', 'value')]
+    [Input('slider-1', 'value')]
 )
 def update_graph(selected_year):
     df2 = df.query(f'Year=={selected_year}')
@@ -59,7 +65,7 @@ def update_graph(selected_year):
     return {
         'data': [trace],
         'layout': go.Layout(
-           height=1000
+            height=1000
         )
     }
 
