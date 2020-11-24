@@ -9,14 +9,17 @@ import numpy as np
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
-df_driver = pd.read_csv('/home/emkaerr/PycharmProjects/F1_Sankey/Drivers.csv')
-df_team = pd.read_csv('/home/emkaerr/PycharmProjects/F1_Sankey/Teams.csv')
-ind_driver = pd.read_csv('/home/emkaerr/PycharmProjects/F1_Sankey/Driver_index.csv')
-ind_team = pd.read_csv('/home/emkaerr/PycharmProjects/F1_Sankey/Team_index.csv')
+df_driver = pd.read_csv('./Drivers.csv')
+df_team = pd.read_csv('./Teams.csv')
+ind_driver = pd.read_csv('./Driver_index.csv')
+ind_team = pd.read_csv('./Team_index.csv')
 
 app.layout = html.Div([
-    html.H2('Formula 1 Sankey Diagram'),
+    html.Hr(),
+    html.Br(),
+    html.H1('Formula 1 Sankey Diagram'),
     html.Hr(),
     html.Div([
         html.H4('Choose Season'),
@@ -40,7 +43,7 @@ app.layout = html.Div([
             ],
             value='tab1'),
     ],
-        style={'width': '80%', 'textAlign': 'center', 'margin': '0 auto'}
+        style={'width': '90%', 'textAlign': 'center', 'margin': '0 auto'}
     ),
 
     html.Div([
