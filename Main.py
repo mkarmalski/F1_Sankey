@@ -62,8 +62,7 @@ app.layout = html.Div([
     [Input('slider-1', 'value'),
      Input('tabs_1', 'value')]
 )
-def update_graph(selected_year,tab):
-
+def update_graph(selected_year, tab):
     if tab == 'tab1':
         # Sankey for drivers
         df2 = df_driver.query(f'Year=={selected_year}')
@@ -75,23 +74,30 @@ def update_graph(selected_year,tab):
                 thickness=50,
                 label=ind_driver['Code'],
                 customdata=ind_driver['Name'],
-                color=['#%06x' % random.randint(0, 0xFFFFFF) for i in ind_driver['Name']],
-                hovertemplate='%{customdata} (%{label})'
+                # color=['#%06x' % random.randint(0, 0xFFFFFF) for i in ind_driver['Name']],
+                color='rgba(255,255,255,1.0)',
+                hovertemplate='%{customdata} (%{label})',
+                line={
+                    'color': 'black',
+                    'width': 0.2
+                }
+
             ),
             link=dict(
                 source=df2['Source'],
                 target=df2['Target'],
                 value=df2['Value'],
                 customdata=df2['Driver'],
-                hovertemplate='%{customdata} has %{value} positions %{target.customdata}'
+                hovertemplate='%{customdata} has %{value} positions %{target.customdata}',
+                color='rgba(128,128,128,0.2)'
             ),
             orientation='v',
             valueformat='.',
-            textfont={'size':15}
+            textfont={'size': 15, 'color': 'black'}
 
         )
     else:
-        #Sankey for teams
+        # Sankey for teams
         df2 = df_team.query(f'Year=={selected_year}')
         trace = go.Sankey(
             arrangement='snap',
@@ -107,7 +113,8 @@ def update_graph(selected_year,tab):
                 target=df2['Target'],
                 value=df2['Value'],
                 customdata=df2['Team'],
-                hovertemplate='%{customdata} has %{value} positions %{target.customdata}'
+                hovertemplate='%{customdata} has %{value} positions %{target.customdata}',
+                color='rgba(128,128,128,0.2)'
             ),
             orientation='v',
             valueformat='.',
