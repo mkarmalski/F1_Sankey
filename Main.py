@@ -49,7 +49,9 @@ app.layout = html.Div([
     html.Div([
         dcc.Graph(id='graph-1')
     ],
-        style={'height': '100%'})
+        style={'height': '100%'}),
+    html.Hr(),
+    html.H6('created by @Mati_Karmalski'),
 
 ], style={
     'textAlign': 'center'
