@@ -1,217 +1,217 @@
 ﻿Name,Ind,Code
-Adams,0,
-Alfa Romeo,1,
-Alta,2,
-Cooper,3,
-Deidt,4,
-ERA,5,
-Ewing,6,
-Ferrari,7,
-Kurtis Kraft,8,
-Langley,9,
-Lesovsky,10,
-Marchese,11,
-Maserati,12,
-Milano,13,
-Moore,14,
-Nichels,15,
-Olson,16,
-Rae,17,
-Simca,18,
-Snowberger,19,
-Stevens,20,
-Talbot-Lago,21,
-Watson,22,
-Wetteroth,23,
-BRM,24,
-Bromme,25,
-Hall,26,
-HWM,27,
-Kuzma,28,
-OSCA,29,
-Pawl,30,
-Schroeder,31,
-Sherman,32,
-Trevis,33,
-Veritas,34,
-AFM,35,
-Aston Butterworth,36,
-BMW,37,
-Cisitalia,38,
-Connaught,39,
-Frazer Nash,40,
-Gordini,41,
-Del Roy,42,
-EMW,43,
-Turner,44,
-Klenk,45,
-Lancia,46,
-Mercedes,47,
-Pankratz,48,
-Phillips,49,
-Vanwall,50,
-Arzani-Volpini,51,
-Epperly,52,
-Bugatti,53,
-Emeryson,54,
-Dunn,55,
-Porsche,56,
-Team Lotus,57,
-Aston Martin,58,
-Christensen,59,
-Cooper-Borgward,60,
-Cooper-Climax,61,
-Cooper-Maserati,62,
-Cooper-OSCA,63,
-Elder,64,
-Fry,65,
-JBW,66,
-Sutton,67,
-Tec-Mec,68,
-Behra-Porsche,69,
-Cooper-Castellotti,70,
-Meskowski,71,
-Scarab,72,
-De Tomaso-Alfa Romeo,73,
-De Tomaso-Osca,74,
-Ferguson,75,
-Gilby,76,
-Lotus-Climax,77,
-Lotus-Maserati,78,
-MBM,79,
-Brabham,80,
-Cooper-Alfa Romeo,81,
-De Tomaso,82,
-ENB,83,
-LDS,84,
-Lola,85,
-Lotus-Borgward,86,
-Lotus-BRM,87,
-ATS,88,
-BRP,89,
-De Tomaso-Ferrari,90,
-Lotus-Ford,91,
-Scirocco,92,
-Stebro,93,
-Brabham-BRM,94,
-Brabham-Climax,95,
-Brabham-Ford,96,
-Derrington,97,
-Honda,98,
-Cooper-Ford,99,
-LDS-Alfa Romeo,100,
-LDS-Climax,101,
-RE,102,
-Brabham-Repco,103,
-Cooper-Ferrari,104,
-Eagle-Climax,105,
-Eagle-Weslake,106,
-McLaren-Ford,107,
-McLaren-Serenissima,108,
-Shannon,109,
-Cooper-ATS,110,
-Matra,111,
-McLaren-BRM,112,
-Protos,113,
-Cooper-BRM,114,
-Matra-Ford,115,
-McLaren,116,
-BRM-Ford,117,
-Bellasi,118,
-March,119,
-McLaren-Alfa Romeo,120,
-Surtees,121,
-Tyrrell,122,
-Lotus-Pratt &amp; Whitney,123,
-March-Alfa Romeo,124,
-March-Ford,125,
-Connew,126,
-Politoys,127,
-Tecno,128,
-Ensign,129,
-Iso Marlboro,130,
-Shadow,131,
-Amon,132,
-Hesketh,133,
-Lyncar,134,
-Maki,135,
-Parnelli,136,
-Penske,137,
-Token,138,
-Trojan,139,
-Embassy Hill,140,
-Fittipaldi,141,
-Shadow-Ford,142,
-Shadow-Matra,143,
-Williams,144,
-Boro,145,
-Brabham-Alfa Romeo,146,
-Kojima,147,
-Ligier,148,
-Wolf,149,
-Apollon,150,
-LEC,151,
-McGuire,152,
-Renault,153,
-Arrows,154,
-Martini,155,
-Merzario,156,
-Theodore,157,
-Kauhsen,158,
-Rebaque,159,
-Osella,160,
-Toleman,161,
-RAM,162,
-Spirit,163,
-Minardi,164,
-Zakspeed,165,
-AGS,166,
-Benetton,167,
-Coloni,168,
-Larrousse,169,
-Dallara,170,
-Euro Brun,171,
-Rial,172,
-Onyx,173,
-Leyton House,174,
-Life,175,
-Fondmetal,176,
-Footwork,177,
-Jordan,178,
-Lambo,179,
-Andrea Moda,180,
-Sauber,181,
-Pacific,182,
-Simtek,183,
-Forti,184,
-Prost,185,
-Stewart,186,
-BAR,187,
-Jaguar,188,
-Toyota,189,
-Red Bull,190,
-BMW Sauber,191,
-MF1,192,
-Spyker MF1,193,
-Super Aguri,194,
-Toro Rosso,195,
-Spyker,196,
-Force India,197,
-Brawn,198,
-HRT,199,
-Lotus,200,
-Virgin,201,
-Caterham,202,
-Lotus F1,203,
-Marussia,204,
-Manor Marussia,205,
-Haas F1 Team,206,
-Racing Point,207,
-AlphaTauri,208,
-1-Win,209,
-2-3,210,
-4-5,211,
-6-10,212,
-10-20,213,
->20,214,
-DNF,215,
+Adams,0,gray
+Alfa Romeo,1,darkred
+Alta,2,gray
+Cooper,3,cadetblue
+Deidt,4,gray
+ERA,5,gray
+Ewing,6,gray
+Ferrari,7,red
+Kurtis Kraft,8,yellow
+Langley,9,gray
+Lesovsky,10,gray
+Marchese,11,gray
+Maserati,12,darkred
+Milano,13,gray
+Moore,14,gray
+Nichels,15,gray
+Olson,16,gray
+Rae,17,gray
+Simca,18,gray
+Snowberger,19,gray
+Stevens,20,gray
+Talbot-Lago,21,lightblue
+Watson,22,gray
+Wetteroth,23,gray
+BRM,24,lightgray
+Bromme,25,gray
+Hall,26,gray
+HWM,27,darkgreen
+Kuzma,28,gainsboro
+OSCA,29,gray
+Pawl,30,gray
+Schroeder,31,gray
+Sherman,32,gray
+Trevis,33,gray
+Veritas,34,gray
+AFM,35,gray
+Aston Butterworth,36,gray
+BMW,37,gray
+Cisitalia,38,gray
+Connaught,39,darkgreen
+Frazer Nash,40,gray
+Gordini,41,blue
+Del Roy,42,gray
+EMW,43,gray
+Turner,44,gray
+Klenk,45,gray
+Lancia,46,gray
+Mercedes,47,lightcoral
+Pankratz,48,gray
+Phillips,49,gray
+Vanwall,50,darkgreen
+Arzani-Volpini,51,gray
+Epperly,52,gray
+Bugatti,53,gray
+Emeryson,54,gray
+Dunn,55,gray
+Porsche,56,fuchsia
+Team Lotus,57,gold
+Aston Martin,58,gray
+Christensen,59,gray
+Cooper-Borgward,60,gray
+Cooper-Climax,61,darkblue
+Cooper-Maserati,62,darkgray
+Cooper-OSCA,63,gray
+Elder,64,gray
+Fry,65,gray
+JBW,66,gray
+Sutton,67,gray
+Tec-Mec,68,gray
+Behra-Porsche,69,gray
+Cooper-Castellotti,70,gray
+Meskowski,71,gray
+Scarab,72,gray
+De Tomaso-Alfa Romeo,73,gray
+De Tomaso-Osca,74,gray
+Ferguson,75,gray
+Gilby,76,gray
+Lotus-Climax,77,lightgreen
+Lotus-Maserati,78,gray
+MBM,79,gray
+Brabham,80,darkblue
+Cooper-Alfa Romeo,81,gray
+De Tomaso,82,gray
+ENB,83,gray
+LDS,84,gray
+Lola,85,orangered
+Lotus-Borgward,86,gray
+Lotus-BRM,87,gold
+ATS,88,yellow
+BRP,89,gray
+De Tomaso-Ferrari,90,gray
+Lotus-Ford,91,gold
+Scirocco,92,gray
+Stebro,93,gray
+Brabham-BRM,94,darkblue
+Brabham-Climax,95,lightblue
+Brabham-Ford,96,darkblue
+Derrington,97,gray
+Honda,98,lightgreen
+Cooper-Ford,99,gray
+LDS-Alfa Romeo,100,gray
+LDS-Climax,101,gray
+RE,102,gray
+Brabham-Repco,103,forestgreen
+Cooper-Ferrari,104,gray
+Eagle-Climax,105,gray
+Eagle-Weslake,106,gray
+McLaren-Ford,107,red
+McLaren-Serenissima,108,gray
+Shannon,109,gray
+Cooper-ATS,110,gray
+Matra,111,blue
+McLaren-BRM,112,gray
+Protos,113,gray
+Cooper-BRM,114,gray
+Matra-Ford,115,orange
+McLaren,116,orange
+BRM-Ford,117,gray
+Bellasi,118,gray
+March,119,turquoise
+McLaren-Alfa Romeo,120,gray
+Surtees,121,blue
+Tyrrell,122,darkblue
+Lotus-Pratt &amp; Whitney,123,gray
+March-Alfa Romeo,124,gray
+March-Ford,125,orange
+Connew,126,gray
+Politoys,127,gray
+Tecno,128,gray
+Ensign,129,red
+Iso Marlboro,130,darkred
+Shadow,131,black
+Amon,132,gray
+Hesketh,133,lightgray
+Lyncar,134,gray
+Maki,135,gray
+Parnelli,136,gray
+Penske,137,red
+Token,138,gray
+Trojan,139,gray
+Embassy Hill,140,gray
+Fittipaldi,141,yellow
+Shadow-Ford,142,gray
+Shadow-Matra,143,gray
+Williams,144,lightblue
+Boro,145,gray
+Brabham-Alfa Romeo,146,red
+Kojima,147,gray
+Ligier,148,blue
+Wolf,149,gold
+Apollon,150,gray
+LEC,151,gray
+McGuire,152,gray
+Renault,153,yellow
+Arrows,154,darkorange
+Martini,155,gray
+Merzario,156,gray
+Theodore,157,lightgrey
+Kauhsen,158,gray
+Rebaque,159,gray
+Osella,160,lightblue
+Toleman,161,darkviolet
+RAM,162,black
+Spirit,163,gray
+Minardi,164,black
+Zakspeed,165,darkred
+AGS,166,black
+Benetton,167,green
+Coloni,168,yellow
+Larrousse,169,green
+Dallara,170,red
+Euro Brun,171,orange
+Rial,172,blue
+Onyx,173,blue
+Leyton House,174,turquoise
+Life,175,gray
+Fondmetal,176,dodgerblue
+Footwork,177,red
+Jordan,178,yellowgreen
+Lambo,179,gray
+Andrea Moda,180,gray
+Sauber,181,blue
+Pacific,182,lightblue
+Simtek,183,darkblue
+Forti,184,yellow
+Prost,185,blue
+Stewart,186,lightgrey
+BAR,187,red
+Jaguar,188,darkolivegreen
+Toyota,189,rosybrown
+Red Bull,190,darkblue
+BMW Sauber,191,blue
+MF1,192,gray
+Spyker MF1,193,gray
+Super Aguri,194,red
+Toro Rosso,195,darkblue
+Spyker,196,orange
+Force India,197,orange
+Brawn,198,yellow
+HRT,199,lightpink
+Lotus,200,gold
+Virgin,201,red
+Caterham,202,green
+Lotus F1,203,black
+Marussia,204,darkslategrey
+Manor Marussia,205,darkred
+Haas F1 Team,206,grey
+Racing Point,207,pink
+AlphaTauri,208,black
+1-Win,209,darkblue
+2-3,210,blue
+4-5,211,skyblue
+6-10,212,lightblue
+10-20,213,cornflowerblue
+>20,214,orange
+DNF,215,red
