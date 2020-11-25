@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 from dash.dependencies import Input, Output
 import pandas as pd
 import numpy as np
+import random
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -64,14 +65,17 @@ app.layout = html.Div([
 def update_graph(selected_year,tab):
 
     if tab == 'tab1':
+        # Sankey for drivers
         df2 = df_driver.query(f'Year=={selected_year}')
+
         trace = go.Sankey(
             arrangement='snap',
             node=dict(
                 pad=5,
-                thickness=100,
+                thickness=50,
                 label=ind_driver['Code'],
                 customdata=ind_driver['Name'],
+                color=['#%06x' % random.randint(0, 0xFFFFFF) for i in ind_driver['Name']],
                 hovertemplate='%{customdata} (%{label})'
             ),
             link=dict(
@@ -82,19 +86,21 @@ def update_graph(selected_year,tab):
                 hovertemplate='%{customdata} has %{value} positions %{target.customdata}'
             ),
             orientation='v',
-            valueformat='.'
+            valueformat='.',
+            textfont={'size':15}
 
         )
     else:
+        #Sankey for teams
         df2 = df_team.query(f'Year=={selected_year}')
         trace = go.Sankey(
             arrangement='snap',
             node=dict(
                 pad=5,
-                thickness=100,
+                thickness=50,
                 label=ind_team['Name'],
-                customdata=ind_team['Name'],
-                hovertemplate='%{customdata} (%{label})'
+                color=ind_team['Code'],
+                hovertemplate='%{label}'
             ),
             link=dict(
                 source=df2['Source'],
@@ -104,7 +110,8 @@ def update_graph(selected_year,tab):
                 hovertemplate='%{customdata} has %{value} positions %{target.customdata}'
             ),
             orientation='v',
-            valueformat='.'
+            valueformat='.',
+            textfont={'size': 15}
 
         )
     return {
