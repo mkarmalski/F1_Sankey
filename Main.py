@@ -5,7 +5,6 @@ import plotly.graph_objects as go
 from dash.dependencies import Input, Output
 import pandas as pd
 import numpy as np
-import random
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -66,7 +65,6 @@ def update_graph(selected_year, tab):
     if tab == 'tab1':
         # Sankey for drivers
         df2 = df_driver.query(f'Year=={selected_year}')
-
         trace = go.Sankey(
             arrangement='snap',
             node=dict(
@@ -75,7 +73,7 @@ def update_graph(selected_year, tab):
                 label=ind_driver['Code'],
                 customdata=ind_driver['Name'],
                 # color=['#%06x' % random.randint(0, 0xFFFFFF) for i in ind_driver['Name']],
-                color='rgba(255,255,255,1.0)',
+                color='rgba(0,49,82,1.0)',
                 hovertemplate='%{customdata} (%{label})',
                 line={
                     'color': 'black',
@@ -89,8 +87,7 @@ def update_graph(selected_year, tab):
                 value=df2['Value'],
                 customdata=df2['Driver'],
                 hovertemplate='%{customdata} has %{value} positions %{target.customdata}',
-                color='rgba(128,128,128,0.2)'
-            ),
+                ),
             orientation='v',
             valueformat='.',
             textfont={'size': 15, 'color': 'black'}
@@ -106,15 +103,15 @@ def update_graph(selected_year, tab):
                 thickness=50,
                 label=ind_team['Name'],
                 color=ind_team['Code'],
-                hovertemplate='%{label}'
+                customdata=ind_team['Name'],
+                hovertemplate='%{customdata}'
             ),
             link=dict(
                 source=df2['Source'],
                 target=df2['Target'],
                 value=df2['Value'],
                 customdata=df2['Team'],
-                hovertemplate='%{customdata} has %{value} positions %{target.customdata}',
-                color='rgba(128,128,128,0.2)'
+                hovertemplate = '%{customdata} has %{value} positions %{target.customdata}'
             ),
             orientation='v',
             valueformat='.',
